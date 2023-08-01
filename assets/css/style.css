@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{font-family: "Poppins",sans-serif;display: flex; justify-content: center; align-items: center; min-height:100vh; background-color: #595D88;}
+
+.sortable-list{background-color: #ffffff; min-width: 450px; max-width: 100%; border-radius: 6px; padding:30px 35px 20px;}
+.sortable-list .item{list-style: none; display:flex; align-items: center; justify-content: space-between; border: 1px solid #ccc; margin-bottom: 12px; padding: 12px;border-radius: 6px;}
+.sortable-list .item i{font-size:1.3rem; color:#474747; cursor: grab;}
+
+.sortable-list .item.dragging :where(.details , i){opacity: 0;}
